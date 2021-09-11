@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+</head>
+<body>
+        <div class="options">
+            <header>Tic Tac Toe</header>
+            <div class="title">Please select the number of rounds : </div>
+            <div class="rounds">
+                <select name="option" id="options">
+                    <option value="">-Rounds-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+  
+
+        <div class="playBoard">
+           
+            <div class="stats">
+                <div class="detail">
+                    <div class="playerX-icon"><i class="fas fa-times"></i></div>
+                    <div class="playerX-wins">0 Wins</div>
+                </div>
+                <div class="detail"> 
+                    <div class="playerO-icon"><i class="far fa-circle"></i></div>
+                    <div class="playerO-wins">0 Wins</div>
+                </div>
+                <div class="detail">
+                    <div class="draws-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="draws">0 Draws</div>
+                </div>
+            </div>
+        
+            <div class="playArea">
+                <section>
+                    <span data-cell id="box1" class=""></span>
+                    <span data-cell id="box2" class=""></span>
+                    <span data-cell id="box3" class=""></span>
+                </section>
+                <section>
+                    <span data-cell id="box4" class=""></span>
+                    <span data-cell id="box5" class=""></span>
+                    <span data-cell id="box6" class=""></span>
+                </section>
+                <section>
+                    <span data-cell id="box7" class=""></span>
+                    <span data-cell id="box8" class=""></span>
+                    <span data-cell id="box9" class=""></span>
+                </section>
+            </div>
+
+            <div class="roundWinMsgBox">
+                <div class="roundWinMsg"></div>
+            </div>
+
+            <div class="players">
+                <span class="Xturn active">X's Turn</span>
+                <span class="Oturn">O's Turn</span>
+                <div class="slider"></div>
+            </div>
+        </div>
+
+        <div class="resultBox">
+            <div class="wonText"></div>
+            <div class="btn"><button>Replay</button></div>
+        </div>
+
+
+<script src="app.js"></script>    
+</body>
+</html>

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    background: linear-gradient( 
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255,255,255,0.5));
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    backdrop-filter: blur(2rem);
+}
+
+.options header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.options .title{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.options .rounds{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    width: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 36px;
+}
+
+option{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.playBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient( 
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255,255,255,0.5));
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+    max-width: 330px;
+    height: 75vh;
+    width: 40vw;
+    backdrop-filter: blur(2rem);
+    cursor: default;
+    display: none;
+}
+
+.playArea{
+    cursor : pointer;
+    
+}
+
+.roundWinMsgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.roundWinMsg{
+    border: 2px solid rgba(148, 146, 146,0.8);
+    max-width: 75%;
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.playerX-wins, .playerO-wins, .draws{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.playerX-icon, .playerO-icon, .draws-icon{
+    font-size: 20px;
+}
+
+.playerO-icon, .playerO-wins{
+    color: #058591;
+}
+
+.playerX-icon, .playerX-wins{
+    color: #2168aa;
+}
+
+.draws, .draws-icon{
+    color: #4a6884;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+
+.players{
+   display: flex;
+   justify-content: center;
+   padding: 0px 50px;
+}
+
+.players span{
+    margin: auto;
+}
+
+.playBoard section{
+    display: flex;
+    justify-content: center;
+}
+
+.playBoard section span{
+    display: block;
+    border: 1.5px solid rgba(148, 146, 146,0.8);
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.playBoard section span.x{
+    color: #2168aa;
+}
+
+.playBoard section span.circle{
+    color: #058591;
+}
+
+#box1, #box2, #box3{
+    border-top: none;
+}
+
+#box1, #box4, #box7{
+    border-left: none;
+}
+
+#box7, #box8, #box9{
+    border-bottom: none;
+}
+
+#box3, #box6, #box9{
+    border-right: none;
+}
+
+.players span.active {
+    background: #36bcd1;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.resultBox{
+    background: linear-gradient( 
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255,255,255,0.5));
+    padding: 25px 20px 25px;
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    backdrop-filter: blur(2rem);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    display: none;
+}
+
+.resultBox .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px ;
+}
+
+.wonText{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.resultBox .btn button{
+    padding: 5px 10px;
+    border-radius: 36px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient( 
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255,255,255,0.5)); 
+    border: 0.5px solid rgb(71, 71, 71);
+    transition: all ease 0.4s;
+}
+
+.resultBox .btn button:hover{
+    background: #79CADC ;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}

@@ -1,6 +1,5 @@
 # Tic-Tac-Toe-Game
 <br>
-<hr>
 This is a simple Tic-Tac-Toe game that was created using HTML, CSS and Javascript.<br>
 Hope you enjoy the game!<br>
 <br>
